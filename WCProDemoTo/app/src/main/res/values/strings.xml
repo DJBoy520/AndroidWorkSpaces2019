@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+        <string name="app_name">WCProDemo</string>
+
+        <string name="get_image">选取相片</string>
+        <string name="get_audio">选取音频</string>
+        <string name="get_vedio">选取视频</string>
+
+        <string name="deaes">解密</string>
+        <string name="aes">加密</string>
+
+        <string name="interrupted">立即中断</string>
+
+    </resources>
+

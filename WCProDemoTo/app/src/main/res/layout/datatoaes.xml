@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#c7edcc"
+              android:orientation="vertical"
+              tools:context="com.example.wcprodemo.GetAllMsg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_getimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_image"/>
+
+        <Button
+            android:id="@+id/btn_getaudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_audio" />
+
+        <Button
+            android:id="@+id/btn_getvedio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_vedio"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/deaes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deaes"
+            style="?android:attr/buttonStyle"
+            android:textSize="30sp"/>
+
+        <Button
+            android:id="@+id/aes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aes"
+            style="?android:attr/buttonStyle"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgShow"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:hint="工作模式:"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/img_path"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/editsharp"
+            android:hint="加密模式"
+            android:textColorHint="#AAAAAA"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgShow"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:hint="工作秘钥:"
+            android:textSize="25dp"/>
+
+        <EditText
+            android:id="@+id/key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="20"
+            android:background="@drawable/editsharp"
+            android:hint="dj520"
+            android:textColorHint="#AAAAAA"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/interrupted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/interrupted"/>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgShow"
+        android:layout_margin="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:hint="消息"
+        android:textSize="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"/>
+
+</LinearLayout>

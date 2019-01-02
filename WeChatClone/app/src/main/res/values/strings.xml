@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">WeChatClone</string>
+    <string-array name="friend_names">
+        <item>one</item>
+        <item>tow</item>
+        <item>three</item>
+        <item>four</item>
+        <item>five</item>
+        <item>six</item>
+    </string-array>
+</resources>

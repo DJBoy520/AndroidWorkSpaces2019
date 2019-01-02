@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <string name="app_name">Login</string>
+    <string-array name="greade">
+        <item>freshman</item>
+        <item>sophomore</item>
+        <item>junior</item>
+        <item>senior</item>
+    </string-array>
+</resources>
