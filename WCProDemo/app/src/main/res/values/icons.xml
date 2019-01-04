@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="fa_icon_picture">&#xf030;</string><!--图片 -->
+    <string name="fa_icon_picture">&#xf03e;</string><!--图片 -->
     <string name="fa_icon_audio">&#xf1c7;</string>
     <string name="fa_icon_video">&#xf1c8;</string>
     <string name="fa_icon_other">&#xf15b;</string>

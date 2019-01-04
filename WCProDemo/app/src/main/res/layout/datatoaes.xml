@@ -5,24 +5,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#c7edcc"
+    android:background="@color/white"
     android:orientation="vertical"
     tools:context="com.example.wcprodemo.GetAllMsg">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2" />
+        android:layout_weight="7" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
@@ -45,6 +46,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:orientation="horizontal">
 
             <Button
@@ -66,24 +68,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="5"></LinearLayout>
 
-        <com.shamanland.fonticon.FontIconButton
-            android:id="@+id/deaes"
-            style="?android:attr/buttonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/deaes"
-            android:textSize="30sp" />
-
-        <com.shamanland.fonticon.FontIconButton
-            android:id="@+id/aes"
-            style="?android:attr/buttonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/aes"
-            android:textSize="30sp" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,38 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imgShow"
-            android:layout_weight="5"
-            android:gravity="center"
-            android:hint="模式:"
-            android:textSize="25dp"
-            tools:ignore="MissingPrefix" />
-
-        <com.beardedhen.androidbootstrap.AwesomeTextView
-            android:id="@+id/img_path"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_weight="20"
-            android:background="@null"
-            android:hint="加密模式"
-            android:textColorHint="#AAAAAA"
-            android:textSize="25dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="3" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1">
-
-        <com.beardedhen.androidbootstrap.AwesomeTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imgShow"
-            android:layout_weight="5"
             android:gravity="center"
             android:hint="秘钥:"
             android:textSize="25dp" />
@@ -136,41 +91,77 @@
             android:layout_height="wrap_content"
             android:layout_weight="20"
             android:background="@drawable/editsharp"
+            android:gravity="center"
             android:hint="123456"
             android:singleLine="true"
             android:textColorHint="#AAAAAA"
             android:textSize="25dp" />
 
-        <com.beardedhen.androidbootstrap.AwesomeTextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3" />
+            android:layout_weight="17" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <com.beardedhen.androidbootstrap.AwesomeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgShow"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:hint="模式:"
+            android:textSize="25dp"
+            tools:ignore="MissingPrefix" />
+
+        <Spinner
+            android:id="@+id/model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:entries="@array/model" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="15" />
 
         <com.shamanland.fonticon.FontIconButton
             android:id="@+id/interrupted"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-
-            android:text="@string/fa_icon_interrupted"
-            android:textSize="90dp" />
+            android:text="@string/interrupted"
+            android:textSize="20dp" />
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1" />
+            android:layout_weight="15" />
 
     </LinearLayout>
 

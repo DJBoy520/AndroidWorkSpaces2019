@@ -18,8 +18,11 @@ import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,7 +30,7 @@ import com.beardedhen.androidbootstrap.TypefaceProvider;
 
 
 public class GetAllMsg extends Activity {
-    private Button btn_getimage, btn_getaudio, btn_getvedio, btn_getother, btn_aes, btn_deaes, btn_interrupted;
+    private Button btn_getimage, btn_getaudio, btn_getvedio, btn_getother, btn_interrupted;
 
     private Activity activity = this;
 
@@ -39,9 +42,11 @@ public class GetAllMsg extends Activity {
     private int DeviceCode;
 
     public Typeface font;
-    public TextView tv;
     public TextView message;
+    private Spinner model;
     public EditText get_key;   //获取key，秘钥
+
+    private ArrayAdapter<String> arr_adapter;
 
     private String FilePath;
     private String FileName;
@@ -94,12 +99,9 @@ public class GetAllMsg extends Activity {
         btn_getother = (Button) findViewById(R.id.btn_getother);
         btn_interrupted = (Button) findViewById(R.id.interrupted);
 
-        btn_aes = (Button) findViewById(R.id.aes);
-        btn_deaes = (Button) findViewById(R.id.deaes);
-
-        tv = (TextView) findViewById(R.id.img_path);
         message = (TextView) findViewById(R.id.message);
         get_key = (EditText) findViewById(R.id.key);
+        model = (Spinner) findViewById(R.id.model);
 
         btn_getimage.setTypeface(font);
         btn_getvedio.setTypeface(font);
@@ -190,20 +192,6 @@ public class GetAllMsg extends Activity {
             }
         });//视频
 
-        btn_aes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                status = 0;
-                tv.setText("加密模式");
-            }
-        });
-        btn_deaes.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                status = 1;
-                tv.setText("解密模式");
-            }
-        });
         btn_interrupted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -211,6 +199,20 @@ public class GetAllMsg extends Activity {
                     ff.setInterruptFalse();
                     Toast.makeText(getApplicationContext(), "操作已中断！", Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        model.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+                // TODO Auto-generated method stub
+                if (arg2 == 0) status = 0;
+                if (arg2 == 1) status = 1;
+            }
+
+            public void onNothingSelected(AdapterView<?> arg0) {
+                // TODO Auto-generated method stub
+                Toast.makeText(getApplicationContext(), "请选择操作模式！", Toast.LENGTH_SHORT).show();
             }
         });
     }
