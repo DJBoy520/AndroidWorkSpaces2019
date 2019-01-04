@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="registET">
+        <item name="android:background">@drawable/edittext_shape</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColorHint">#95A1AA</item>
+        <item name="android:hint">请输入...</item>
+        <item name="android:colorBackgroundCacheHint">#F5FFFA</item>
+        <item name="android:layout_weight">8</item>
+        <item name="android:colorBackground">#F8F8F8</item>
+        <item name="android:layout_marginRight">50dp</item>
+    </style>
+
+    <style name="registTV">
+        <item name="android:layout_weight">2</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+</resources>

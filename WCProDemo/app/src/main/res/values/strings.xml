@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WCProDemo</string>
+
+    <string name="deaes">解密</string>
+    <string name="aes">加密</string>
+
+    <string name="interrupted">操作中止</string>
+
+</resources>
+
