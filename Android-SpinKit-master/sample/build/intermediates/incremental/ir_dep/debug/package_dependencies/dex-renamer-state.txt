@@ -1,0 +1,4 @@
+#Sat Jan 05 18:10:48 CST 2019
+base.0=E\:\\WorkSpaces\\AndroidWorkSpaces\\andriodworkspaces\\Android-SpinKit-master\\sample\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+path.0=classes.dex
+renamed.0=classes.dex
